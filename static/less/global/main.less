@@ -1,10 +1,16 @@
-body,
-.view-login,
-.view-register,
-.view-passwordreset {
-    background-color: @color-background;
+html{
+	min-height: 100%;
+	position: relative;
+	height: auto;
+	max-height: inherit;
+	body,
+	.view-login,
+	.view-register,
+	.view-passwordreset {
+		background-color: @white;
 
-    @import 'header.less';
-    @import 'modal.less';
-    @import 'footer.less';
+		@import 'header.less';
+		@import 'modal.less';
+		@import 'footer.less';
+	}
 }

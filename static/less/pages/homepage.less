@@ -1,193 +1,199 @@
 > .home {
-    margin: 0;
-    background: none;
+	margin: 0;
+	background: none;
 
-    > header {
-        .square(auto);
+	> header {
+		.square(auto);
 
-        box-shadow: none;
-        background: 0;
-        border: none;
-        background-color: @color-primary;
-        margin: 0;
-        padding: 60px 0;
+		box-shadow: none;
+		background: 0;
+		border: none;
+		background-image: url(@header-bg-left) , url(@header-bg-right);
+		background-position: left center , right top;
+		background-repeat: no-repeat;
+		background-color: @color-primary;
+		margin: 0;
+		padding: 40px 0 50px;
 
-        .outer-wrapper {
-            .ionisx-container();
+		.outer-wrapper {
+			.ionisx-container();
 
-            border-radius: @default-border-radius;
-            padding-bottom: 15px;
-            padding-top: 15px;
+			border-radius: @default-border-radius;
+			padding-bottom: 10px;
+			padding-top: 10px;
 
-            .title {
-                .square(auto);
-                .make-md-column(8);
-                .make-lg-column(8);
+			.title {
+				.square(auto);
+				.make-md-column(8);
+				.make-lg-column(8);
 
-                background: none;
-                box-shadow: none;
-                border: 0 none;
-                transition: none;
-                float: none;
-                min-height: 0;
-                margin: 0;
-                padding: 0;
+				background: none;
+				box-shadow: none;
+				border: 0 none;
+				transition: none;
+				float: none;
+				min-height: 0;
+				margin: 0;
+				padding: 0;
 
-                hgroup {
-                    padding: 0;
-                    transition: none;
-                    color: @white;
+				hgroup {
+					padding: 0;
+					transition: none;
+					color: @white;
 
-                    h1 {
-                        font: inherit;
-                        font-size: @font-size-h1;
-                        font-weight: 500;
-                        color: inherit;
-                        text-shadow: none;
-                        text-transform: none;
-                        margin: 0;
-                    }
+					h1 {
+						font: inherit;
+						font-size: @font-size-h1 + 10;
+						font-weight: 500;
+						color: inherit;
+						text-shadow: none;
+						text-transform: none;
+						margin: 0;
+					}
 
-                    h2 {
-                        font: inherit;
-                        font-size: @font-size-h2;
-                        color: inherit;
-                        text-shadow: none;
-                        text-transform: none;
-                        margin: 0;
-                    }
-                }
-            }
+					h2 {
+						font: inherit;
+						font-size: @font-size-h4;
+						color: inherit;
+						text-shadow: none;
+						text-transform: none;
+						margin: 0;
+						letter-spacing: normal;
+					}
+				}
+			}
 
-            .media {
-                .square(auto);
-                .make-md-column(4);
-                .make-lg-column(4);
+			.media {
+				.square(auto);
+				.make-md-column(4);
+				.make-lg-column(4);
 
-                display: block;
-                background: none;
-                border: 0 none;
-                float: none;
-                margin: 0;
-                padding: 0;
+				display: block;
+				background: none;
+				border: 0 none;
+				float: none;
+				margin: 0;
+				padding: 0;
 
-                @media (max-width: @screen-sm-max) {
-                    width: 350px;
-                }
+				@media (max-width: @screen-sm-max) {
+					width: 350px;
+				}
 
-                @media (max-width: @screen-xs-max) {
-                    width: auto;
-                }
+				@media (max-width: @screen-xs-max) {
+					width: auto;
+				}
 
-                .hero {
-                    .size(auto, 170px);
+				.hero {
+					.size(auto, 170px);
 
-                    background: none;
-                    overflow: initial;
-                    position: static;
-                    margin: auto;
-                    background: @black;
-                    border: 1px solid @color-border;
-                    border-radius: @default-border-radius;
+					background: none;
+					overflow: initial;
+					position: static;
+					margin: auto;
+					background: @black;
+					border: 1px solid @color-border;
+					border-radius: @default-border-radius;
 
-                    @media (max-width: @screen-sm-max) {
-                        margin: 15px 0 0 0;
-                    }
-                }
-            }
-        }
-    }
+					@media (max-width: @screen-sm-max) {
+						margin: 15px 0 0 0;
+					}
+				}
+			}
+		}
+	}
 
-    .container {
-        .ionisx-container();
-    }
+	.container {
+		.ionisx-container();
+	}
 
-    .courses {
-        padding: 0;
-        text-align: center;
-        margin-left: -15px;
-        margin-right: -15px;
+	.courses {
+		padding: 0;
+		text-align: center;
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-top: 30px;
 
-        .courses-listing-item {
-            .make-xs-column(12);
-            .make-sm-column(6);
-            .make-md-column(6);
-            .make-lg-column(4);
+		.courses-listing-item {
+			.make-xs-column(12);
+			.make-sm-column(6);
+			.make-md-column(6);
+			.make-lg-column(4);
 
-            margin: 0;
-            display: block;
-            text-align: left;
+			margin: 0;
+			display: block;
+			text-align: left;
 
-            &:last-child {
-                margin: 0;
-            }
+			&:last-child {
+				margin: 0;
+			}
 
-            .course {
-                box-shadow: none;
-                background: none;
-                border-radius: 0;
-                background-color: @white;
-                border: 1px solid @white;
+			.course {
+				box-shadow: none;
+				background: none;
+				border-radius: 0;
+				background-color: @white;
+				border: 1px solid @white;
 
-                &:hover {
-                    box-shadow: none;
-                    border-color: @color-primary;
-                }
+				&:hover {
+					box-shadow: 0 0 2px rgba(0,0,0,0.1);
+					border-color: transparent;
+				}
 
-                .inner-wrapper {
-                    border: 0 none;
+				.inner-wrapper {
+					border: 0 none;
+					box-shadow: 0 0 3px rgba(0,0,0,0.4);
 
-                    .course-preview {
-                        box-shadow: none;
-                        border-bottom: 1px solid @color-border;
-                        background: none;
-                        background-color: fadeout(@white, 10%);
+					.course-preview {
+						box-shadow: none;
+						border-bottom: 1px solid @color-border;
+						background: none;
+						background-color: fadeout(@white, 10%);
 
-                        hgroup {
-                            width: 100%;
+						hgroup {
+							width: 100%;
 
-                            h2 {
-                                font-family: @font-family-sans-serif;
-                                font-size: 14px;
-                                font-weight: 600;
-                                text-shadow: none;
-                                color: @black;
-                            }
-                        }
+							h2 {
+								font-family: @font-family-sans-serif;
+								font-size: 14px;
+								font-weight: 600;
+								text-shadow: none;
+								color: @black;
+							}
+						}
 
-                        .info-link {
-                            display: none;
-                        }
+						.info-link {
+							display: none;
+						}
 
-                        .course-number {
-                            display: none;
-                        }
-                    }
-                }
+						.course-number {
+							display: none;
+						}
+					}
+				}
 
-                .status {
-                    display: none;
-                }
+				.status {
+					display: none;
+				}
 
-                .meta-info {
-                    box-shadow: none;
-                    background: none;
-                    border: 0 none;
-                    background-color: fadeout(@black, 20%);
-                    border-radius: @default-border-radius;
-                    right: 5px;
-                    bottom: 5px;
+				.meta-info {
+					box-shadow: none;
+					background: none;
+					border: 0 none;
+					background-color: fadeout(@black, 20%);
+					border-radius: @default-border-radius;
+					right: 5px;
+					bottom: 5px;
 
-                    p {
-                        font: inherit;
-                        font-size: 0.9em;
-                        color: @white;
-                        margin: 0;
-                        padding: 4px 8px;
-                    }
-                }
+					p {
+						font: inherit;
+						font-size: 0.9em;
+						color: @white;
+						margin: 0;
+						padding: 4px 8px;
+					}
+				}
 
-            }
-        }
-    }
+			}
+		}
+	}
 }

@@ -36,16 +36,18 @@
         <li>
           <a href="${marketing_link('PRIVACY')}">${_("Privacy Policy")}</a>
         </li>
+        <li>
+			<p class="copyright">${_(u"© 2014 {platform_name}, some rights reserved.").format(platform_name=platform_name())}</p>
+        </li>
         %endif
       </ul>
     </nav>
-    <div>
-      <p class="copyright">${_(u"© 2014 {platform_name}, some rights reserved.").format(platform_name=platform_name())}</p>
-    </div>
+<!--
     <div class="by-ionisx">
       <a href="https://ionisx.com">
         <img src="${static.url('themes/{theme_name}/images/logo-x-white.png'.format(theme_name=settings.THEME_NAME))}" alt="Theme by IONISx">
       </a>
     </div>
+-->
   </div>
 </footer>
