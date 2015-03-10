@@ -164,3 +164,53 @@
 		}
 	}
 }
+
+.instructor-dashboard-content-2 .instructor-nav li{
+	@media(max-width: @screen-xs-max){
+		width: 45%;
+		font-size: 12px;
+		background: @color-background;
+		margin: 5px !important;
+		line-height: normal;
+	}
+}
+
+#e-commerce{
+	#registration_code_generation_modal{
+		position: fixed !important;
+		top: 50px !important;
+		max-width: 930px;
+		width: 100%;
+		@media(max-width: @screen-sm-max){
+			top: 0px !important;	
+		}
+		.inner-wrapper{
+			max-height: 90vh;
+			overflow: auto;
+			@media(max-width: @screen-xs-max){
+				padding: 40px 20px;
+			}
+			padding-bottom: 100px;
+			#registration-content{
+				padding: 0;
+				form#generate_codes{
+					ol.list-input{
+						li{
+							margin-left: 0 !important;
+							margin-right: 15px;
+							@media(max-width: @screen-xs-max){
+								width: 250px;
+							}
+							&:nth-child(3n){
+								margin-left: 0 !important;
+							}
+							input{
+								height: auto;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
