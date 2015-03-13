@@ -101,6 +101,39 @@
 		}
 	}
 }
+
+
+.video-wrapper {
+	@media(max-width: @screen-xs-max){
+		width: 100% !important;
+	}
+	.video-player{
+		padding: 0 !important;
+	}
+}
+
+.xmodule_display.xmodule_VideoModule div.video ol.subtitles{
+	@media(max-width: @screen-xs-max){
+		width: 100% !important;
+		margin-top: @layout-top-spacing;
+	}
+}
+
+.wrap-instructor-info{
+	@media(max-width: @screen-xs-max){
+		float: none !important;
+	}
+	.instructor-info-action{
+		@media(max-width: @screen-xs-max){
+			float: none;
+			margin: 15px 0;
+			text-align: center;
+			padding: 10px;
+			display: block;
+		}
+	}
+}
+
 .wrapper-preview-menu{
 	background: @color-primary;
 	color: @white;
@@ -166,12 +199,26 @@
 }
 
 .instructor-dashboard-content-2 .instructor-nav li{
-	@media(max-width: @screen-xs-max){
-		width: 45%;
+	@media(max-width: @screen-sm-max){
+		width: 48%;
 		font-size: 12px;
 		background: @color-background;
 		margin: 5px !important;
 		line-height: normal;
+	}
+	@media(max-width: @screen-xs-max){
+		width: 45%;
+	}
+	a{
+		@media(max-width: @screen-sm-max){
+			border-radius: 3px;
+		}
+		&.active-section{
+			@media(max-width: @screen-sm-max){
+				width: 100%;
+			}	
+			background-color: @color-primary !important;
+		}
 	}
 }
 
@@ -211,6 +258,13 @@
 					}
 				}
 			}
+		}
+	}
+	input[name="download_company_name"], input[name="active_company_name"], input[name="spent_company_name"], input[type="submit"]{
+		@media(max-width: @screen-xs){
+			width: 100%;
+			word-wrap: break-word;
+			white-space: pre-line;
 		}
 	}
 }

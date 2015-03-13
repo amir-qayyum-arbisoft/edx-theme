@@ -292,6 +292,9 @@
 
                             &.seq_video:after {
                                 content: '\f03d';
+								@media(max-width: @screen-xs-max){
+									display: none;
+								}
                             }
 
                             &.seq_problem:after {
@@ -312,7 +315,6 @@
         }
 
         .sequence-bottom {
-            margin: 2em 0;
             text-align: center;
 
             ul {
@@ -342,5 +344,12 @@
                 }
             }
         }
+		.openassessment .step--response .response__submission__actions .action--save{
+			@media(max-width: @screen-xs){
+				padding: 10px;
+				min-width: inherit;
+				width: 100%;
+			}
+		}
     }
  }

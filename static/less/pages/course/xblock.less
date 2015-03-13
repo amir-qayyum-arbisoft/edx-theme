@@ -138,7 +138,11 @@
 
         .new-post-btn {
             .ionisx-btn(@white, @color-secondary);
-
+			@media(max-width: @screen-xs){
+				display: block;
+				float: none;
+				margin-top: 20px;
+			}
             font-size: 0.9em;
 
             span.icon {

@@ -20,7 +20,7 @@ header.global, header.global-new, header.global.slim {
 
 		h1.logo {
 			margin: 0 50px 0 0;
-			padding: 4px 0 0 0;
+			padding: 0;
 			float: left;
 			@media (max-width: @screen-xs-max){
 				width: 100%;
@@ -33,7 +33,7 @@ header.global, header.global-new, header.global.slim {
 			}
 
 			a {
-				.size(@logo-img-width, 32px);
+				.size(@logo-img-width, 46px);
 				.text-hide();
 
 				background-image: url(@logo-img-path);
@@ -41,9 +41,9 @@ header.global, header.global-new, header.global.slim {
 				background-repeat: no-repeat;
 
 				@media (max-width: @screen-xs-max) {
-					.size(@logo-sm-img-width, 48px);
+					.size(@logo-sm-img-width, 46px);
 					display: inline-block;
-					height: 32px;
+					height: 46px;
 					background-image: url(@logo-sm-img-path);
 				}
 			}
